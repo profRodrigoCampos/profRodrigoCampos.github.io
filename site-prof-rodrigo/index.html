@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Prof. Rodrigo Campos | Professor de Informática no IFSP</title>
+  <meta name="description" content="Prof. Rodrigo Campos, professor de Informática no IFSP Campus Bauru. Infraestrutura de redes, arquitetura e organização de computadores e projetos de servidores próprios.">
+  <meta name="theme-color" content="#0A1A2B">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230A1A2B'/%3E%3Ccircle cx='16' cy='16' r='5' fill='none' stroke='%235CE1E6' stroke-width='2.5'/%3E%3Ccircle cx='6' cy='8' r='2.5' fill='%235CE1E6'/%3E%3Ccircle cx='26' cy='9' r='2.5' fill='%235CE1E6'/%3E%3Ccircle cx='9' cy='26' r='2.5' fill='%235CE1E6'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,300..800&family=Martian+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script>document.documentElement.classList.add("js");</script>
+</head>
+<body>
+  <a class="skip" href="#conteudo">Pular para o conteúdo</a>
+
+  <header class="topbar">
+    <a class="brand" href="#inicio" aria-label="Início">rodrigo<span>@ifsp</span></a>
+    <nav aria-label="Seções">
+      <ul>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#formacao">Formação</a></li>
+        <li><a href="#atuacao">Atuação</a></li>
+        <li><a href="#projetos">Projetos</a></li>
+        <li><a href="#certificacoes">Certificações</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero" id="inicio">
+    <canvas id="topologia" aria-hidden="true"></canvas>
+    <div class="hero-inner">
+      <h1 class="reveal">Prof. Rodrigo Campos</h1>
+      <p class="tagline reveal">Professor de Informática no IFSP</p>
+    </div>
+  </section>
+
+  <main id="conteudo">
+
+    <section class="section" id="sobre">
+      <h2>Sobre</h2>
+      <div class="prose">
+        <p>Sou professor de Informática no Instituto Federal de São Paulo, lecionando disciplinas da área de infraestrutura de redes.</p>
+      </div>
+    </section>
+
+    <section class="section" id="formacao">
+      <h2>Formação</h2>
+      <ul class="degrees">
+        <li class="degree">
+          <span class="degree-level">Mestrado</span>
+          <span class="degree-name">Gestão e Desenvolvimento da Educação Profissional</span>
+        </li>
+        <li class="degree">
+          <span class="degree-level">Especialização</span>
+          <span class="degree-name">Redes de Computadores</span>
+        </li>
+        <li class="degree">
+          <span class="degree-level">Graduação</span>
+          <span class="degree-name">Bacharelado em Sistemas de Informação</span>
+        </li>
+      </ul>
+    </section>
+
+    <section class="section" id="atuacao">
+      <h2>Áreas de atuação</h2>
+      <div class="iface" role="list">
+        <div class="iface-head" aria-hidden="true">
+          <span>interface</span><span>estado</span><span>área</span>
+        </div>
+        <div class="iface-row" role="listitem">
+          <span class="if-name" aria-hidden="true">eth0</span>
+          <span class="if-state" aria-hidden="true"><i class="led on"></i>UP</span>
+          <div class="if-body">
+            <h3>Redes de computadores</h3>
+            <p>Projeto e cabeamento, endereçamento IP, VLANs, roteamento e redes sem fio.</p>
+          </div>
+        </div>
+        <div class="iface-row" role="listitem">
+          <span class="if-name" aria-hidden="true">eth1</span>
+          <span class="if-state" aria-hidden="true"><i class="led on"></i>UP</span>
+          <div class="if-body">
+            <h3>Arquitetura e organização de computadores</h3>
+            <p>Como processador, memória e barramentos trabalham juntos, do bit ao sistema completo.</p>
+          </div>
+        </div>
+        <div class="iface-row" role="listitem">
+          <span class="if-name" aria-hidden="true">eth2</span>
+          <span class="if-state" aria-hidden="true"><i class="led on"></i>UP</span>
+          <div class="if-body">
+            <h3>Infraestrutura e servidores</h3>
+            <p>Linux, virtualização com Proxmox, serviços de diretório e nuvem própria.</p>
+          </div>
+        </div>
+        <div class="iface-row" role="listitem">
+          <span class="if-name" aria-hidden="true">eth3</span>
+          <span class="if-state" aria-hidden="true"><i class="led on"></i>UP</span>
+          <div class="if-body">
+            <h3>Segurança digital</h3>
+            <p>Análise de tráfego e boas práticas de proteção em redes e sistemas.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="projetos">
+      <div class="section-head">
+        <h2>Projetos</h2>
+        <ul class="legend" aria-label="Legenda dos indicadores">
+          <li><i class="led on"></i>Em funcionamento</li>
+          <li><i class="led deploy"></i>Em implantação</li>
+        </ul>
+      </div>
+      <p class="section-intro">Serviços que montei do zero, em casa ou no campus. Cada painel é uma unidade do rack.</p>
+
+      <div class="rack">
+        <article class="unit">
+          <div class="unit-status"><i class="led on"></i><span>Em funcionamento</span></div>
+          <div class="unit-body">
+            <h3>Servidor doméstico num smartphone</h3>
+            <p>Um Galaxy S20 ligado na tomada 24 horas, transformado em servidor com Termux. Acesso por SSH com chave, serviços que sobem sozinhos no boot, um Ubuntu em proot para o que o Android não roda, e um monitor que avisa no celular quando a bateria, a temperatura ou algum serviço sai do normal.</p>
+            <ul class="tags"><li>Termux</li><li>OpenSSH</li><li>Nginx</li><li>proot-distro</li><li>cron</li><li>ntfy</li></ul>
+          </div>
+        </article>
+
+        <article class="unit">
+          <div class="unit-status"><i class="led on"></i><span>Em funcionamento</span></div>
+          <div class="unit-body">
+            <h3>Nextcloud: nuvem própria</h3>
+            <p>Armazenamento e edição de documentos no navegador, sem depender de serviços de terceiros. Uma instância roda no servidor doméstico com MariaDB e Redis; outra, no campus, guarda os arquivos de alunos e professores.</p>
+            <ul class="tags"><li>Nextcloud</li><li>MariaDB</li><li>Redis</li><li>Collabora Online</li><li>PHP</li></ul>
+          </div>
+        </article>
+
+        <article class="unit">
+          <div class="unit-status"><i class="led on"></i><span>Em funcionamento</span></div>
+          <div class="unit-body">
+            <h3>Jellyfin: streaming de mídia</h3>
+            <p>Filmes e séries servidos a partir do próprio celular-servidor para a TV da sala, e acessíveis fora de casa por uma VPN, sem abrir portas no roteador.</p>
+            <ul class="tags"><li>Jellyfin</li><li>Ubuntu ARM64</li><li>Tailscale</li></ul>
+          </div>
+        </article>
+
+        <article class="unit">
+          <div class="unit-status"><i class="led deploy"></i><span>Em implantação</span></div>
+          <div class="unit-body">
+            <h3>Domínio de login escolar com UCS</h3>
+            <p>Login único para centenas de alunos e professores nos laboratórios Windows do campus, no estilo Active Directory. Usuários importados por turma a partir de planilhas, políticas de grupo e armazenamento integrado ao Nextcloud, tudo virtualizado no Proxmox.</p>
+            <ul class="tags"><li>Univention UCS</li><li>UCS@school</li><li>Samba AD</li><li>Proxmox</li><li>Python</li></ul>
+          </div>
+        </article>
+
+        <article class="unit">
+          <div class="unit-status"><i class="led on"></i><span>Em funcionamento</span></div>
+          <div class="unit-body">
+            <h3>Overleaf para pesquisadores</h3>
+            <p>Editor LaTeX colaborativo hospedado no servidor do campus, para os professores escreverem artigos sem depender da versão comercial.</p>
+            <ul class="tags"><li>Overleaf CE</li><li>Docker</li><li>Ubuntu Server</li><li>TeX Live</li></ul>
+          </div>
+        </article>
+
+        <article class="unit">
+          <div class="unit-status"><i class="led on"></i><span>Em funcionamento</span></div>
+          <div class="unit-body">
+            <h3>GLPI: chamados e inventário de TI</h3>
+            <p>Central de atendimento para registrar e acompanhar os chamados de TI do campus e manter o inventário de equipamentos. Instalado do zero num servidor Linux virtualizado.</p>
+            <ul class="tags"><li>GLPI</li><li>Ubuntu Server</li><li>PHP</li><li>MariaDB</li><li>Proxmox</li></ul>
+          </div>
+        </article>
+
+        <article class="unit">
+          <div class="unit-status"><i class="led on"></i><span>Em funcionamento</span></div>
+          <div class="unit-body">
+            <h3>AdGuard Home</h3>
+            <p>Bloqueio de anúncios e rastreadores direto no DNS, valendo para todos os aparelhos da rede de uma vez, sem instalar nada em cada um. Implantado e testado em diferentes cenários com máquinas virtuais.</p>
+            <ul class="tags"><li>AdGuard Home</li><li>DNS</li><li>Máquinas virtuais</li></ul>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="certificacoes">
+      <h2>Certificações</h2>
+      <p class="section-intro">Cada item leva ao selo verificável no Credly.</p>
+      <ul class="certs">
+        <li>
+          <a class="cert" href="https://www.credly.com/badges/921517b0-4cfa-4ba7-aa09-9862f1adfde2" target="_blank" rel="noopener">
+            <span class="cert-code">CCST</span>
+            <span class="cert-name">Cisco Certified Support Technician Networking</span>
+            <span class="cert-org">Cisco</span>
+          </a>
+        </li>
+        <li>
+          <a class="cert" href="https://www.credly.com/badges/1e192cab-ab9d-4177-8f14-ce24f8d9f6d2" target="_blank" rel="noopener">
+            <span class="cert-code">AZ-900</span>
+            <span class="cert-name">Microsoft Certified: Azure Fundamentals</span>
+            <span class="cert-org">Microsoft</span>
+          </a>
+        </li>
+        <li>
+          <a class="cert" href="https://www.credly.com/badges/ccc5590a-d5e8-472c-b5d0-533bf2706a17" target="_blank" rel="noopener">
+            <span class="cert-code">AI-900</span>
+            <span class="cert-name">Microsoft Certified: Azure AI Fundamentals</span>
+            <span class="cert-org">Microsoft</span>
+          </a>
+        </li>
+        <li>
+          <a class="cert" href="https://www.credly.com/badges/69563ae3-77a5-4a46-8343-b594f3f057c8" target="_blank" rel="noopener">
+            <span class="cert-code">5 anos</span>
+            <span class="cert-name">Instrutor Cisco Networking Academy: 5 anos de serviço</span>
+            <span class="cert-org">Cisco</span>
+          </a>
+        </li>
+      </ul>
+    </section>
+
+    <section class="section contato" id="contato">
+      <h2>Entre em contato</h2>
+      <p class="section-intro">Para assuntos acadêmicos, projetos ou convites, escreva para o e-mail institucional.</p>
+      <a class="mail" href="mailto:rodrigo.campos@ifsp.edu.br">rodrigo.campos@ifsp.edu.br</a>
+      <div class="actions">
+        <a class="btn" href="http://lattes.cnpq.br/2272863002513232" target="_blank" rel="noopener">Currículo Lattes</a>
+        <a class="btn" href="https://www.linkedin.com/in/rodrigovcampos/" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="btn" href="https://github.com/profRodrigoCampos" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="ano">2026</span> Rodrigo Campos.</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
